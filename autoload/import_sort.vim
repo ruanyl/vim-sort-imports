@@ -37,7 +37,7 @@ func! import_sort#run()
     endif
   else
     " Executable bin doesn't exist
-    call ErrorMsg('Can not find import-sort')
+    echoerr 'Can not find import-sort'
     return 1
   endif
   call winrestview(winview)
