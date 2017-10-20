@@ -1,6 +1,9 @@
 vim-sort-import
 ----------
 
+![vim-sort-import](https://user-images.githubusercontent.com/486382/31822807-a24b33d8-b5b2-11e7-8468-df9a6f45528e.gif)
+
+
 Please refer to [import-sort](https://github.com/renke/import-sort) for more details
 
 Config example:
