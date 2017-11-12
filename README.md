@@ -9,7 +9,7 @@ Please refer to [import-sort](https://github.com/renke/import-sort) for more det
 Config example:
 ```
 // enable auto sort import on write
-let g:fixmyjs_sort_auto = 1
+let g:import_sort_auto = 1
 
 // install import-sort packages
 npm install --save-dev import-sort-cli import-sort-parser-babylon import-sort-parser-typescript import-sort-style-renke
