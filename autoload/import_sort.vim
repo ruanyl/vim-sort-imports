@@ -23,18 +23,8 @@ func! import_sort#run()
 
   let l:import_sort_executable = import_sort#find_executable()
   if executable(l:import_sort_executable)
-    let l:import_sort_tmp_file = fnameescape(tempname())
-    call system(l:import_sort_executable . ' ' . path . ' --write ' . l:import_sort_tmp_file)
-
-    if filereadable(l:import_sort_tmp_file)
-      let result = readfile(l:import_sort_tmp_file)
-      "call writefile(result, path)
-      "silent exec "e"
-      silent exec "1,$j"
-      call setline("1", result[0])
-      call append("1", result[1:])
-      silent exec "w"
-    endif
+    call system(l:import_sort_executable . ' ' . path . ' --write')
+    silent exec "e"
   else
     " Executable bin doesn't exist
     echoerr 'Can not find import-sort'
